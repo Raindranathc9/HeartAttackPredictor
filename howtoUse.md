@@ -12,7 +12,7 @@
    
    import numpy as np
    
-   # Sample input features
+   ## Sample input features
    features = np.array([[62, 0, 61, 1, 38, 1, 155000, 1.1, 143, 1, 1]])
 
 3. Make Predictions:
