@@ -19,25 +19,25 @@ import numpy as np
 features = np.array([[62, 0, 61, 1, 38, 1, 155000, 1.1, 143, 1, 1]])
 Feature Format:
 
-age: Age of the patient (e.g., 62)
-anaemia: 1 if the patient has anaemia; otherwise, 0
-creatinine phosphokinase: CPK enzyme level
-diabetes: 1 if the patient has diabetes; otherwise, 0
-ejection fraction: Percentage of blood leaving the heart per beat
-high bp: 1 if the patient has high blood pressure; otherwise, 0
-platelets: Platelet count
-serum creatinine: Level of serum creatinine in the blood
-serum sodium: Level of serum sodium in the blood
-sex: 1 for male, 0 for female
-smoking: 1 if the patient smokes; otherwise, 0
+  age: Age of the patient (e.g., 62)
+  anaemia: 1 if the patient has anaemia; otherwise, 0
+  creatinine phosphokinase: CPK enzyme level
+  diabetes: 1 if the patient has diabetes; otherwise, 0
+  ejection fraction: Percentage of blood leaving the heart per beat
+  high bp: 1 if the patient has high blood pressure; otherwise, 0
+  platelets: Platelet count
+  serum creatinine: Level of serum creatinine in the blood
+  serum sodium: Level of serum sodium in the blood
+  sex: 1 for male, 0 for female
+  smoking: 1 if the patient smokes; otherwise, 0
 Make Predictions
 Use the loaded model to make predictions based on the prepared features.
 
-python
-Copy code
-# Make a prediction
-prediction = model.predict(features)
-print("Prediction:", "Heart Attack Risk" if prediction[0] == 1 else "No Heart Attack Risk")
+  # Make a prediction
+  
+  prediction = model.predict(features)
+  print("Prediction:", "Heart Attack Risk" if prediction[0] == 1 else "No Heart Attack Risk")
+  
 Output Interpretation:
 1: Indicates a higher risk of a heart attack.
 0: Indicates a lower or no risk of a heart attack.
